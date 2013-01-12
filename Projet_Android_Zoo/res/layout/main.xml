@@ -1,14 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".Main" />
+    <include layout="@layout/main_header" /> 
+    
+    <com.example.projet_android_zoo.ScrollLayout   
+	  android:id="@+id/main_scrolllayout"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent"
+   	  android:layout_weight="1">    
+  
+ 	  <include layout="@layout/frame_homepage" />
+        
+	  <include layout="@layout/frame_listanimal" />
+	  
+	  <include layout="@layout/frame_map" />
+	      
+	  <include layout="@layout/frame_question" />
+      
+	</com.example.projet_android_zoo.ScrollLayout> 
+    
+    <include layout="@layout/main_footer" />   
 
-</RelativeLayout>
+</LinearLayout>

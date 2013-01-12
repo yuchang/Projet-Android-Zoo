@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- share items -->
+    <string-array name="head_titles">
+	    <item>Activités</item>
+	    <item>List d\'animaux</item>
+	    <item>Carte de Zoo</item>
+	    <item>FAQ</item>
+    </string-array>
+</resources>
